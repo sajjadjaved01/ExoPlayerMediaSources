@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button android:layout_width="match_parent"
+            android:text="Extractor Media Source"
+            android:id="@+id/btnExtractor"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:text="Clipping Media Source"
+            android:id="@+id/btnClipping"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:text="Concatenating Media Source"
+            android:id="@+id/btnConcatenating"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:text="Looping Media Source"
+            android:id="@+id/btnLooping"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:text="Merging Media Source"
+            android:id="@+id/btnMerging"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:text="Composite Media Source"
+            android:id="@+id/btnComposite"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
