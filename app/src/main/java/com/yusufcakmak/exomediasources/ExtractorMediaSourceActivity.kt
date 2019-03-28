@@ -17,9 +17,6 @@ import kotlinx.android.synthetic.main.activity_extractor_media_source.*
 
 
 /*
-    Donatello Trisolino
-    video credit -> https://www.pexels.com/video/video-of-motor-bikers-on-the-road-1333384/
-
     Playing local R.raw files with ExoPlayer2 -> https://medium.com/@tonyowen/playing-local-r-raw-files-with-exoplayer2-1a62276ebeaa
  */
 
@@ -32,7 +29,6 @@ class ExtractorMediaSourceActivity : AppCompatActivity() {
     private val trackSelectionFactory = AdaptiveTrackSelection.Factory()
     private var trackSelector: DefaultTrackSelector? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_extractor_media_source)
@@ -42,7 +38,7 @@ class ExtractorMediaSourceActivity : AppCompatActivity() {
         trackSelector = DefaultTrackSelector(trackSelectionFactory)
         mediaDataSourceFactory = DefaultDataSourceFactory(this, Util.getUserAgent(this, "mediaPlayerSample"))
 
-        val dataSpec = DataSpec(RawResourceDataSource.buildRawResourceUri(R.raw.video))
+        val dataSpec = DataSpec(RawResourceDataSource.buildRawResourceUri(R.raw.himym))
         val rawDataSource = RawResourceDataSource(this)
         rawDataSource.open(dataSpec)
 

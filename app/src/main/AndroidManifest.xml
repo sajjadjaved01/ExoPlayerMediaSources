@@ -20,6 +20,10 @@
         </activity>
 
         <activity android:name=".ExtractorMediaSourceActivity"/>
+        <activity android:name=".ClippingMediaSourceActivity"/>
+        <activity android:name=".LoopingMediaSourceActivity"/>
+        <activity android:name=".MergingMediaSourceActivity"/>
+        <activity android:name=".ConcatenatingMediaSourceActivity"/>
     </application>
 
 </manifest>

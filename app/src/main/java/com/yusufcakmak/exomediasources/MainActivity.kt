@@ -16,5 +16,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnClipping.setOnClickListener {
+            val intent = Intent(this, ClippingMediaSourceActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnLooping.setOnClickListener {
+            val intent = Intent(this, LoopingMediaSourceActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnMerging.setOnClickListener {
+            val intent = Intent(this, MergingMediaSourceActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnConcatenating.setOnClickListener {
+            val intent = Intent(this, ConcatenatingMediaSourceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
